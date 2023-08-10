@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV SENAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>Modelo de Aprendizado de Máquina do <b>SENAI</b> </p>
+    </div>
+
+    <object class="tv" data="./assets/undraw_video_call_re_4p26.svg"></object>
+    <div class="webcam">
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+    </div>
+
+    <div class="progress bar-1">
+        <div></div>
+    </div>
+    <div class="progress bar-2">
+        <div></div>
+    </div>
+
+    <div class="example">
+        <h1>Projeto Desenvolvido com a Turma de Desenvolvimento de Sistemas</h1>
+        <p>Mas afinal o que é <b>Aprendizado de Máquina?</b> Imagine que você está ensinando um animal de estimação
+            virtual, como um robô de estimação, a reconhecer diferentes tipos de frutas. Vamos chamar esse robô de
+            "Aprendiz". <br>
+
+            <li><b>Coleta de Dados:</b> Primeiro, você mostra ao Aprendiz várias frutas diferentes, como maçãs, bananas e laranjas.
+            Você também diz ao Aprendiz o nome de cada fruta toda vez que a mostra. O Aprendiz tira fotos das frutas e
+            anota os nomes.</li>
+
+            <li><b>Preparação dos Dados:</b> Agora, o Aprendiz tem muitas fotos e nomes de frutas. Essas fotos são como pistas
+            visuais, e os nomes são como rótulos que dizem que fruta é qual. O Aprendiz organiza essas pistas e rótulos
+            para entender a diferença entre as frutas.</li>
+
+            <li><b>Treinamento:</b> O Aprendiz começa a estudar as pistas e rótulos que você deu. Ele procura por padrões nas fotos
+            para aprender como cada fruta se parece. Cada vez que ele acerta o nome de uma fruta, ele fica mais feliz, e
+            quando erra, ele tenta entender onde errou para aprender melhor.</li>
+
+            <li><b>Ajustes:</b> À medida que o Aprendiz continua a aprender, ele também percebe onde ele está tendo mais
+            dificuldades. Você ajuda o Aprendiz dando mais exemplos das frutas que ele confunde. Ele olha atentamente
+            para esses exemplos extras para melhorar a sua compreensão.</li>
+
+            <li><b>Teste:</b> Depois de muito treinamento, você apresenta ao Aprendiz algumas frutas que ele nunca viu antes. O
+            Aprendiz tenta adivinhar os nomes dessas frutas com base no que aprendeu. Você avalia se ele está acertando
+            a maioria das vezes.</li>
+
+            <li><b>Aprimoramento contínuo:</b> Se o Aprendiz ainda está cometendo erros, você continua treinando com mais exemplos
+            até que ele possa identificar corretamente uma grande variedade de frutas.</li></p>
+    </div>
+
+    <div class="card">
+        <h3>Aqui tentamos classificar se você está ou não com Óculos</h3>
+        <p>Aproxime e vamos ver se nosso modelo consegue te classificar 😁</p>
+    </div>
+    <object class="arrow" data="./assets/undraw_arrow.svg"></object>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="animation.js"></script>
+<script src="model.js"></script>
+
+</html>
